@@ -10,6 +10,11 @@ until number == 0
 end
 
 def countdown_with_sleep(number)
-  sleep 5
+  until number == 0
+    puts "#{seconds_to_midnight} SECOND(S)!"
+    sleep(1)
+    number -= 1
+  end
   "HAPPY NEW YEAR!"
 end
+
